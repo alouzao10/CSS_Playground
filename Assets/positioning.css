@@ -1,0 +1,50 @@
+.parentPOS {
+  position: relative;
+  height: 150px;
+}
+
+.onePOS {
+  position: relative;
+  top: 0;
+}
+
+.twoPOS {
+  position: relative;
+  top: 0;
+}
+
+.threePOS {
+  position: sticky;
+  top: 0;
+}
+
+/*
+
+Static Positioning
+- The default positioning of elements as they appear in the documentation
+
+Relative Positioning
+- Similar to static/default positioning
+- Allows modification to the top, bottom, left, and right
+- Change position of the element relative to where it is in the document if static
+- Could cause overflow of elements by stacking them 
+- Is removed from the document flow
+
+Absolute Positioning
+- Stick something at a position with nothing moving around it
+- Used to modify the top, bottom, left, and right elements
+- Positions it based on the parent container position
+- The parent element needs to be Relative for the Absolute position to be places within/around it
+- A position other than static, absolute will use it as the parent element to base it around
+
+Fixed Positioning
+- Ignores Absolute positioning
+- Based on the entire html document and not on any other positioning
+- Stay in the same place as you scroll 
+
+Sticky Positioning
+- Combination of relative and fixed positioning
+- The position is relative when in view
+- On scrolling and element is no longer in view, the position is fixed as you scroll
+
+*/

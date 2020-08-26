@@ -1,0 +1,70 @@
+.parentBox {
+  width: 100%;
+  background-color: yellow;
+}
+
+.flexBox-container {
+  display: flex;
+
+  /*Column*/
+  /*flex-direction: column;
+  justify-content: center;
+  height: 800px;
+  align-items: center;*/
+
+  /*Row*/
+  /*flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center;
+  height: 700px;*/
+}
+
+.flexBox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+
+.item1 {
+  min-height: 100px;
+  flex-shrink: 0;
+  align-self: flex-end;
+  /*order: 2;*/
+}
+
+.item2 {
+  min-height: 200px;
+  flex-grow: 1;
+  align-self: center;
+  /*order: 3;*/
+}
+
+.item3 {
+  min-height: 300px;
+  flex-grow: 1;
+  /*order: 1;*/
+}
+
+/*
+
+Display Flex
+- The items in the parent container will align in a row
+- Their widths and heights will adjust to the size of the parent container
+- Layout different elements within the parent container row
+- Can specify how the items should grow and hide
+- Based on the Rows or Columns
+- The layout will follow which type of flex you choose
+- Use the justify-content style to place the direction or location of the content
+    - flex-start. flex-end, center, space-between, space-around
+- Use align-items to position each element within the box
+    - stretch, flex-start/end, center
+- Use flex-wrap to stack elements on smaller screens
+- Best to use align-items and justify-content when working with flex-boxes
+- Use flex-shrink to maintain the size on adjustment
+- Use flex-grow to grow the element on adjustment 
+    - Using different numbers will adjust the grow size
+    - If the same value is used the grow size will be the same
+
+*/

@@ -1,0 +1,20 @@
+.parent {
+  background-color: rgb(119, 119, 253);
+  padding: 5px;
+}
+
+.childOne {
+  background-color: yellow;
+}
+
+.childTwo {
+  background-color: green;
+}
+
+.childThree {
+  background-color: red;
+}
+
+.child {
+  padding: 5px;
+}
